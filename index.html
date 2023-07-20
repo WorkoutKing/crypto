@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Display</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search cryptocurrency..."
+      />
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="table-container">
+      <h2>Top 10 Popular Cryptocurrencies</h2>
+      <table id="crypto-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price (USD)</th>
+            <th>24h Low (USD)</th>
+            <th>24h High (USD)</th>
+            <th>1h Change</th>
+            <th>24h Change</th>
+            <th>7d Change</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="biggest-gainers-container">
+      <h2>Biggest Gainers (24h)</h2>
+      <table id="biggest-gainers-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price (USD)</th>
+            <th>24h Low (USD)</th>
+            <th>24h High (USD)</th>
+            <th>1h Change</th>
+            <th>24h Change</th>
+            <th>7d Change</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="biggest-losers-container">
+      <h2>Biggest Losers (24h)</h2>
+      <table id="biggest-losers-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price (USD)</th>
+            <th>24h Low (USD)</th>
+            <th>24h High (USD)</th>
+            <th>1h Change</th>
+            <th>24h Change</th>
+            <th>7d Change</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="details-container" id="details-container">
+      <!-- The detailed information of the selected cryptocurrency will be displayed here -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-container input {
+  padding: 8px;
+}
+
+.search-container button {
+  padding: 8px 16px;
+}
+
+.table-container {
+  margin: 20px;
+}
+
+#crypto-table,
+#biggest-gainers-table,
+#biggest-losers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#crypto-table th,
+#crypto-table td,
+#biggest-gainers-table th,
+#biggest-gainers-table td,
+#biggest-losers-table th,
+#biggest-losers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.details-container {
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
