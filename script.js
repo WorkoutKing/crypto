@@ -34,9 +34,9 @@ function displayCryptoData(cryptoData) {
       }" width="30" height="30"></td>
         <td>${crypto.name}</td>
         <td>${crypto.symbol.toUpperCase()}</td>
-        <td>$${crypto.current_price.toFixed(2)}</td>
-        <td>$${crypto.low_24h.toFixed(2)}</td>
-        <td>$${crypto.high_24h.toFixed(2)}</td>
+        <td>$${crypto.current_price}</td>
+        <td>$${crypto.low_24h}</td>
+        <td>$${crypto.high_24h}</td>
         <td>${formatPriceChange(
           crypto.price_change_percentage_1h_in_currency
         )}</td>
@@ -76,9 +76,9 @@ function showDetails(crypto) {
   const detailsContainer = document.getElementById("details-container");
   detailsContainer.innerHTML = `
     <h2>${crypto.name} (${crypto.symbol.toUpperCase()})</h2>
-    <p>Current Price: $${crypto.current_price.toFixed(2)}</p>
-    <p>Lowest Price in the Last 24 Hours: $${crypto.low_24h.toFixed(2)}</p>
-    <p>Highest Price in the Last 24 Hours: $${crypto.high_24h.toFixed(2)}</p>
+    <p>Current Price: $${crypto.current_price}</p>
+    <p>Lowest Price in the Last 24 Hours: $${crypto.low_24h}</p>
+    <p>Highest Price in the Last 24 Hours: $${crypto.high_24h}</p>
     <!-- You can add more details here as needed -->
   `;
 }
@@ -95,9 +95,9 @@ function displayBiggestGainers(gainersData) {
     }" width="30" height="30"></td>
       <td>${crypto.name}</td>
       <td>${crypto.symbol.toUpperCase()}</td>
-      <td>$${crypto.current_price.toFixed(2)}</td>
-      <td>$${crypto.low_24h.toFixed(2)}</td>
-      <td>$${crypto.high_24h.toFixed(2)}</td>
+      <td>$${crypto.current_price}</td>
+      <td>$${crypto.low_24h}</td>
+      <td>$${crypto.high_24h}</td>
         <td>${formatPriceChange(
           crypto.price_change_percentage_1h_in_currency
         )}</td>
@@ -123,9 +123,9 @@ function displayBiggestLosers(losersData) {
     }" width="30" height="30"></td>
       <td>${crypto.name}</td>
       <td>${crypto.symbol.toUpperCase()}</td>
-      <td>$${crypto.current_price.toFixed(2)}</td>
-      <td>$${crypto.low_24h.toFixed(2)}</td>
-      <td>$${crypto.high_24h.toFixed(2)}</td>
+      <td>$${crypto.current_price}</td>
+      <td>$${crypto.low_24h}</td>
+      <td>$${crypto.high_24h}</td>
         <td>${formatPriceChange(
           crypto.price_change_percentage_1h_in_currency
         )}</td>
